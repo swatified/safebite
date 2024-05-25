@@ -22,6 +22,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
@@ -70,6 +71,14 @@ public class Authentication extends AppCompatActivity {
         verifyOTP = findViewById(R.id.buttonVerifyOTP);
         auth=FirebaseAuth.getInstance();
         //googleSignIn = findViewById(R.id.buttonGoogleSignIn);
+
+        FirebaseUser currentUser = auth.getCurrentUser();
+        if (currentUser != null) {
+            // User is signed in, navigate to the next activity
+            startActivity(new Intent(Authentication.this, Form.class));
+            finish(); // Close the Authentication activity
+            return;
+        }
 
         sendOTP.setOnClickListener(new View.OnClickListener() {
             @Override
