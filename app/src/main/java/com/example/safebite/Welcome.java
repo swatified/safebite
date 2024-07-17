@@ -60,7 +60,7 @@ public class Welcome extends AppCompatActivity {
         signInClient= GoogleSignIn.getClient(this, gso);
         GoogleSignInAccount signInAccount = GoogleSignIn.getLastSignedInAccount(this);
         if(signInAccount != null || mAuth.getCurrentUser() != null) {
-            startActivity(new Intent(this, Form.class));
+            startActivity(new Intent(this, Main.class));
         }
         googleButton.setOnClickListener(v -> {
             Intent sign = signInClient.getSignInIntent();

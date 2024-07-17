@@ -1,6 +1,7 @@
 package com.example.safebite;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -41,14 +42,14 @@ import java.util.Map;
 public class Form extends AppCompatActivity {
     private final String[] allergens = {
             "milk products", "eggs", "nuts", "soy", "shellfish", "wheat",
-            "mustard", "kiwi", "sesame", "mango", "onion", "fish",
-            "avocado", "corn", "garlic", "banana", "celery", "tomato"
+            "mustard", "kiwi", "sesame", "mango", "eggplant", "cocoa",
+            "avocado", "corn", "onion", "fish", "garlic", "banana", "celery", "tomato"
     };
     private static final String TAG = "MainActivity";
 
 
-    private ImageView[] imageViews = new ImageView[18];
-    private boolean[] selectedAllergens = new boolean[18]; // to keep track of selected allergens
+    private ImageView[] imageViews = new ImageView[20];
+    private boolean[] selectedAllergens = new boolean[20]; // to keep track of selected allergens
     private FirebaseFirestore db;
     private FirebaseAuth auth;
     private FirebaseUser user;
@@ -69,7 +70,7 @@ public class Form extends AppCompatActivity {
                 R.id.imageView5, R.id.imageView6, R.id.imageView7, R.id.imageView8,
                 R.id.imageView9, R.id.imageView10, R.id.imageView11, R.id.imageView12,
                 R.id.imageView13, R.id.imageView14, R.id.imageView15, R.id.imageView16,
-                R.id.imageView17, R.id.imageView18
+                R.id.imageView17, R.id.imageView18b
         };
 
         for (int id : imageViewIds) {
@@ -94,6 +95,16 @@ public class Form extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
         db = FirebaseFirestore.getInstance();
+
+
+        FirebaseUser currentUser = auth.getCurrentUser();
+        if (currentUser != null) {
+            // User is signed in, navigate to the next activity
+            startActivity(new Intent(Form.this, Main.class));
+            finish(); // Close the Authentication activity
+            return;
+        }
+
 
         // Find and set click listeners on image views
         for (int i = 0; i < imageViews.length; i++) {
@@ -140,6 +151,7 @@ public class Form extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(Void aVoid) {
                                     Toast.makeText(Form.this, "Allergens saved successfully!", Toast.LENGTH_SHORT).show();
+                                    startActivity(new Intent(Form.this, Main.class));
                                 }
                             })
                             .addOnFailureListener(new OnFailureListener() {
@@ -157,6 +169,5 @@ public class Form extends AppCompatActivity {
 
 
     }
-
 
 }

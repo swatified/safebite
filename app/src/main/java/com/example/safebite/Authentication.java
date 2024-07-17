@@ -75,7 +75,7 @@ public class Authentication extends AppCompatActivity {
         FirebaseUser currentUser = auth.getCurrentUser();
         if (currentUser != null) {
             // User is signed in, navigate to the next activity
-            startActivity(new Intent(Authentication.this, Form.class));
+            startActivity(new Intent(Authentication.this, Main.class));
             finish(); // Close the Authentication activity
             return;
         }

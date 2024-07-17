@@ -346,7 +346,7 @@
                         android:layout_width="232dp"
                         android:layout_height="158dp"
                         android:layout_marginRight="-15dp"
-                        android:src="@drawable/onion" />
+                        android:src="@drawable/eggplant" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -355,7 +355,7 @@
                         android:layout_marginTop="-20dp"
                         android:gravity="center"
                         android:textColor="@color/grey"
-                        android:text="Onion" />
+                        android:text="Eggplant" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -369,18 +369,19 @@
                         android:layout_width="232dp"
                         android:layout_height="156dp"
                         android:layout_marginLeft="-11dp"
-                        android:src="@drawable/fish" />
+                        android:src="@drawable/cocoa" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="-20dp"
-                        android:layout_marginRight="13dp"
+                        android:layout_marginRight="12dp"
                         android:gravity="top"
                         android:textColor="@color/grey"
-                        android:text="Fish" />
+                        android:text="Cocoa" />
                 </LinearLayout>
             </LinearLayout>
+
 
             <!-- Seventh row of images -->
             <LinearLayout
@@ -466,7 +467,7 @@
                         android:layout_width="232dp"
                         android:layout_height="158dp"
                         android:layout_marginRight="-15dp"
-                        android:src="@drawable/garlic" />
+                        android:src="@drawable/onion" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -475,7 +476,7 @@
                         android:layout_marginTop="-20dp"
                         android:gravity="center"
                         android:textColor="@color/grey"
-                        android:text="Garlic" />
+                        android:text="Onion" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -489,18 +490,19 @@
                         android:layout_width="232dp"
                         android:layout_height="156dp"
                         android:layout_marginLeft="-11dp"
-                        android:src="@drawable/banana" />
+                        android:src="@drawable/fish" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="-20dp"
-                        android:layout_marginRight="12dp"
+                        android:layout_marginRight="13dp"
                         android:gravity="top"
                         android:textColor="@color/grey"
-                        android:text="Banana" />
+                        android:text="Fish" />
                 </LinearLayout>
             </LinearLayout>
+
 
             <!-- Ninth row of images -->
             <LinearLayout
@@ -526,12 +528,72 @@
                         android:layout_width="232dp"
                         android:layout_height="158dp"
                         android:layout_marginRight="-15dp"
-                        android:src="@drawable/celery" />
+                        android:src="@drawable/garlic" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="9dp"
+                        android:layout_marginTop="-20dp"
+                        android:gravity="center"
+                        android:textColor="@color/grey"
+                        android:text="Garlic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="166dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="232dp"
+                        android:layout_height="156dp"
+                        android:layout_marginLeft="-11dp"
+                        android:src="@drawable/banana" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-20dp"
+                        android:layout_marginRight="12dp"
+                        android:gravity="top"
+                        android:textColor="@color/grey"
+                        android:text="Banana" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Tenth row of images -->
+            <LinearLayout
+                android:id="@+id/tenth_row"
+                android:layout_width="409dp"
+                android:layout_height="166dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ninth_row"
+                tools:layout_editor_absoluteY="16dp">
+
+                <LinearLayout
+                    android:layout_width="206dp"
+                    android:layout_height="166dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView19"
+                        android:layout_width="232dp"
+                        android:layout_height="158dp"
+                        android:layout_marginRight="-15dp"
+                        android:src="@drawable/celery" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
                         android:layout_marginTop="-20dp"
                         android:gravity="center"
                         android:textColor="@color/grey"
@@ -545,7 +607,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView18"
+                        android:id="@+id/imageView20"
                         android:layout_width="232dp"
                         android:layout_height="156dp"
                         android:layout_marginLeft="-11dp"
@@ -564,7 +626,7 @@
 
 
             <LinearLayout
-                android:id="@+id/tenth_row"
+                android:id="@+id/eleventh_row"
                 android:layout_width="409dp"
                 android:layout_height="166dp"
                 android:layout_marginTop="10dp"
@@ -572,7 +634,7 @@
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ninth_row"
+                app:layout_constraintTop_toBottomOf="@+id/tenth_row"
                 tools:layout_editor_absoluteY="16dp">
 
                 <ImageView
