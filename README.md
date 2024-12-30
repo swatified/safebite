@@ -8,7 +8,6 @@
 > <br/><br/>
 
 ![Safebite Mockup](https://github.com/user-attachments/assets/7862451b-79e1-46a4-83eb-11d203eb4e87)
-
 <br/><br/>
 
 ## ✨ Key Features
