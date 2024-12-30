@@ -7,7 +7,9 @@
 > <br/>SafeBite is an AI-powered Android application designed to help individuals with food allergies discover safe and delicious recipes. The app provides personalized recipe recommendations while ensuring all suggested dishes are free from user-specific allergens while still providing them the same amount of nutrition and similar taste than the allergen would have.
 > <br/><br/>
 
-![Safebite Mockup](https://github.com/user-attachments/assets/93bee758-d0de-4421-ae1d-3560bc604c6b)
+![Safebite Mockup](https://github.com/user-attachments/assets/7862451b-79e1-46a4-83eb-11d203eb4e87)
+
+<br/><br/>
 
 ## ✨ Key Features
 
